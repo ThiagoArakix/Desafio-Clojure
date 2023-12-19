@@ -1,0 +1,929 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd c:\Users\Administrador\batalha-naval & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:57582 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉batalha-naval.core꞉>  ; Use `alt+enter` to evaluate
+clj꞉batalha-naval.core꞉> 
+; Jack-in done.
+clj꞉batalha-naval.core꞉> 
+nil
+clj꞉batalha-naval.teste2꞉> 
+batalha_naval.teste2.Jogo
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/recorde-atom
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicao-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/inicializar-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/imprimir-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicionar-navios-aleatorios
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogada-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/algum-navio-encontrado?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/formatted-time
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/atualizar-recorde
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-concluido
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-loop
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogar-batalha-naval
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+
+Jogadas:  0
+~~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  1
+*~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  2
+**~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  3
+***~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  4
+****
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  5
+****
+*~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  6
+****
+**~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  7
+****
+***~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  8
+****
+****
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  9
+****
+****
+*~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  10
+****
+****
+**~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  11
+****
+****
+***~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  12
+****
+****
+****
+~~~~
+Água! Tente novamente.
+
+Jogadas:  13
+****
+****
+****
+*~~~
+Água! Tente novamente.
+
+Jogadas:  14
+****
+****
+****
+**~~
+Você encontrou um navio!
+
+Jogadas:  15
+****
+****
+****
+**X~
+Parabéns! Você encontrou um navio!
+Recorde Atual: Jogadas:  2147483647 , Tempo:  9223372036854776,000s
+Recorde Quebrado! Novo recorde: Jogadas:  15 , Tempo:  1703016587,101s
+Você atingiu um novo recorde!
+****
+****
+****
+**X~
+Jogo Concluído!
+Recorde Atual: Jogadas:  15 , Tempo:  1703016587,101s
+; Execution error (NullPointerException) at batalha-naval.teste2/jogar-batalha-naval (form-init2095878828164635353.clj:118).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+
+Jogadas:  0
+~~~~
+~~~~
+~~~~
+~~~~
+Você desistiu do jogo. Até a próxima!
+; Execution error (NullPointerException) at batalha-naval.teste2/jogar-batalha-naval (form-init2095878828164635353.clj:118).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogar-batalha-naval
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogar-batalha-naval
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+
+Jogadas:  0
+~~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  1
+*~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  2
+**~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  3
+***~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  4
+****
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  5
+****
+~*~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  6
+****
+**~~
+~~~~
+~~~~
+; Execution error (NullPointerException) at batalha-naval.teste2/jogar-batalha-naval (form-init2095878828164635353.clj:119).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogar-batalha-naval
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-loop
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-concluido
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/atualizar-recorde
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/formatted-time
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/algum-navio-encontrado?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogada-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicionar-navios-aleatorios
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/imprimir-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/inicializar-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicao-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/recorde-atom
+clj꞉batalha-naval.teste2꞉> 
+batalha_naval.teste2.Jogo
+clj꞉batalha-naval.teste2꞉> 
+nil
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+
+Jogadas:  1
+~~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  2
+*~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  3
+**~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  4
+***~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  5
+****
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  6
+****
+*~~~
+~~~~
+~~~~
+Você encontrou um navio!
+
+Jogadas:  7
+****
+*X~~
+~~~~
+~~~~
+Parabéns! Você encontrou um navio!
+Recorde Atual: Jogadas:  2147483647 , Tempo:  9223372036854776,000s
+Recorde Quebrado! Novo recorde: Jogadas:  7 , Tempo:  1703016858,139s
+Você atingiu um novo recorde!
+****
+*X~~
+~~~~
+~~~~
+Jogo Concluído!
+Recorde Atual: Jogadas:  7 , Tempo:  1703016858,139s
+; Execution error (NullPointerException) at batalha-naval.teste2/jogar-batalha-naval (form-init2095878828164635353.clj:119).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> #'batalha-naval.teste2/posicao-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/inicializar-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/imprimir-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicionar-navios-aleatorios
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogada-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/algum-navio-encontrado?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/formatted-time
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/atualizar-recorde
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-concluido
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-loop
+clj꞉batalha-naval.teste2꞉> 
+; Syntax error reading source at (REPL:111:84).
+; Map literal must contain an even number of forms
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogar-batalha-naval
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-loop
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-concluido
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/atualizar-recorde
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/formatted-time
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/algum-navio-encontrado?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogada-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicionar-navios-aleatorios
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/imprimir-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/inicializar-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicao-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/recorde-atom
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+
+Jogadas:  0
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Água! Tente novamente.
+
+Jogadas:  1
+*~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Água! Tente novamente.
+
+Jogadas:  2
+**~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Água! Tente novamente.
+
+Jogadas:  3
+***~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Água! Tente novamente.
+
+Jogadas:  4
+****~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Água! Tente novamente.
+
+Jogadas:  5
+*****~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Água! Tente novamente.
+
+Jogadas:  6
+******~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Você encontrou um navio!
+
+Jogadas:  7
+******X~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Parabéns! Você encontrou um navio!
+Recorde Atual: Jogadas:  2147483647 , Tempo:  9223372036854776,000s
+Recorde Quebrado! Novo recorde: Jogadas:  7 , Tempo:  1703017066,300s
+Você atingiu um novo recorde!
+******X~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+~~~~~~~~
+Jogo Concluído!
+Recorde Atual: Jogadas:  7 , Tempo:  1703017066,300s
+; Execution error (NullPointerException) at batalha-naval.teste2/jogar-batalha-naval (form-init2095878828164635353.clj:119).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/formatted-time
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/atualizar-recorde
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicao-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/inicializar-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/formatted-time
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+
+Jogadas:  0
+~~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  1
+*~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  2
+**~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  3
+***~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  4
+****
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  5
+****
+*~~~
+~~~~
+~~~~
+Você encontrou um navio!
+
+Jogadas:  6
+****
+*X~~
+~~~~
+~~~~
+Parabéns! Você encontrou um navio!
+Recorde Atual: Jogadas:  2147483647 , Tempo:  9223372036854775
+Recorde Quebrado! Novo recorde: Jogadas:  6 , Tempo:  1703017194
+Você atingiu um novo recorde!
+****
+*X~~
+~~~~
+~~~~
+Jogo Concluído!
+Recorde Atual: Jogadas:  6 , Tempo:  1703017194
+; Execution error (NullPointerException) at batalha-naval.teste2/jogar-batalha-naval (form-init2095878828164635353.clj:119).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/atualizar-recorde
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+
+Jogadas:  0
+~~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  1
+*~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  2
+**~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  3
+***~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  4
+****
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  5
+****
+*~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  6
+****
+**~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  7
+****
+***~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  8
+****
+****
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  9
+****
+****
+*~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  10
+****
+****
+**~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  11
+****
+****
+***~
+~~~~
+Você encontrou um navio!
+
+Jogadas:  12
+****
+****
+***X
+~~~~
+Parabéns! Você encontrou um navio!
+; Execution error (NullPointerException) at batalha-naval.teste2/atualizar-recorde (form-init2095878828164635353.clj:45).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-concluido
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-loop
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogar-batalha-naval
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogar-batalha-naval
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-loop
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogo-concluido
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/atualizar-recorde
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/formatted-time
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/algum-navio-encontrado?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogada-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicionar-navios-aleatorios
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/imprimir-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+nil
+clj꞉batalha-naval.teste2꞉> 
+nil
+clj꞉batalha-naval.teste2꞉> 
+batalha_naval.teste2.Jogo
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/recorde-atom
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/posicao-valida?
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/inicializar-tabuleiro
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+nil
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/jogar-batalha-naval
+clj꞉batalha-naval.teste2꞉> (jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+
+Jogadas:  0
+~~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  1
+*~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  2
+**~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  3
+***~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  4
+****
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  5
+****
+*~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  6
+****
+*~*~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  7
+****
+***~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  8
+****
+****
+~~~~
+~~~~
+Posição inválida ou já tentada. Tente novamente.
+
+Jogadas:  8
+****
+****
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  9
+****
+****
+*~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  10
+****
+****
+*~~~
+*~~~
+Água! Tente novamente.
+
+Jogadas:  11
+****
+****
+*~~~
+**~~
+Você encontrou um navio!
+
+Jogadas:  12
+****
+****
+*~~~
+**X~
+Parabéns! Você encontrou um navio!
+; Execution error (NullPointerException) at batalha-naval.teste2/atualizar-recorde (form-init2095878828164635353.clj:45).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> 
+#'batalha-naval.teste2/atualizar-recorde
+clj꞉batalha-naval.teste2꞉> 
+(jogar-batalha-naval)
+Bem-vindo ao Jogo de Batalha Naval!
+Objetivo: Encontrar pelo menos um navio em menos jogadas e menos tempo.
+Para desistir, digite 'desistir'.
+Para fazer uma jogada, digite as coordenadas no formato 'linha coluna'. Exemplo: '1 2'.
+
+OBS: O indice das linhas e das colunas inicia em 0.
+
+Jogadas:  0
+~~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  1
+*~~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  2
+**~~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  3
+***~
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  4
+****
+~~~~
+~~~~
+~~~~
+Água! Tente novamente.
+
+Jogadas:  5
+****
+*~~~
+~~~~
+~~~~
+Você encontrou um navio!
+
+Jogadas:  6
+****
+*X~~
+~~~~
+~~~~
+Parabéns! Você encontrou um navio!
+Recorde Atual: Jogadas:  2147483647 , Tempo:  9223372036854775
+Recorde Quebrado! Novo recorde: Jogadas:  6 , Tempo:  1703017549
+Você atingiu um novo recorde!
+****
+*X~~
+~~~~
+~~~~
+Jogo Concluído!
+Recorde Atual: Jogadas:  6 , Tempo:  1703017549
+; Execution error (NullPointerException) at batalha-naval.teste2/jogar-batalha-naval (form-init2095878828164635353.clj:118).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉batalha-naval.teste2꞉> 

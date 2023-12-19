@@ -1,0 +1,1 @@
+{:jogadas 10, :tempo 10000}
